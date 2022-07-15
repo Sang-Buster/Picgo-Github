@@ -1,0 +1,11 @@
+{
+  "Heo": {
+    "type": "image",
+    "container": [
+      {
+        "text": "Heo-100",
+        "icon": "<img src='https://cdn.jsdelivr.net/npm/iemotion-pic@latest/dist/Heo/Sticker-100.json'>"
+      }
+    ]
+  }
+}
