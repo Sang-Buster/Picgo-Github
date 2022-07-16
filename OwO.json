@@ -168,10 +168,6 @@
       "type": "image",
       "container": [
         {
-          "text": "bilibili_face-2020",
-          "icon": "<img src='https://emotion.acs.pw/emotion/bilibili_face/2020.png'>"
-        },
-        {
           "text": "bilibili_face-doge",
           "icon": "<img src='https://emotion.acs.pw/emotion/bilibili_face/doge.png'>"
         },
@@ -476,10 +472,6 @@
       "emoji-2": {
         "type": "image",
         "container": [
-          {
-            "text": "Heo-100-info",
-            "icon": "<img src='https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@latest/Sticker-100/info.json'>"
-          },
           {
             "text": "Heo-100-不好意思",
             "icon": "<img src='https://cdn.jsdelivr.net/gh/zhheo/Sticker-Heo@latest/Sticker-100/不好意思.png'>"
