@@ -1,0 +1,307 @@
+#footer {
+  background: transparent!important;
+}
+
+#footer::before{
+  background: transparent!important;
+}
+
+#footer-wrap {
+  color:white;
+}
+
+.tk-row-actions-start .tk-action-icon:nth-child(2){
+  display: none!important;
+  /* visibility: hidden;
+  opacity: 0;
+  三条属性择一即可 */
+}
+
+/* 首页文章卡片 */
+div.recent-post-item{
+  background:rgba(255, 255, 255, 0.95)!important;
+}
+/* 首页侧栏卡片 */
+.card-widget{
+background:rgba(255, 255, 255, 0.95)!important;
+}
+/* 文章页面正文背景 */
+div#post{
+background: rgba(255, 255, 255, 0.95)!important;
+}
+/* 分页页面 */
+div#page{
+background: rgba(255, 255, 255, 0.95)!important;
+}
+
+
+
+/* 夜间模式： Darkmode */
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.5)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+[data-theme="dark"]
+  div.recent-post-item{
+      background: rgba(0, 0, 0, 0.5)!important;
+    }
+[data-theme="dark"]
+  div#page{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+[data-theme="dark"]
+  div#tag{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+[data-theme="dark"]
+  div#category{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+[data-theme="dark"]
+  div#archive{
+    background: rgba(0, 0, 0, 0.5)!important;
+  }
+
+
+/* 阅读模式：Readmode */
+.read-mode #aside-content .card-widget{
+    background: rgba(255, 255, 255, 0.5)!important;
+  }
+.read-mode div#post{
+  background: rgba(255, 255, 255, 0.5)!important;
+  }
+
+/* Readmode under darkmode, 夜间模式下的阅读模式： */
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.5)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]  
+  .read-mode div#post{
+      background: rgba(0, 0, 0, 0.5)!important;
+      color: #ffffff;
+      }
+
+/* 图片模糊渐变清晰 */
+/*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+/* #page-header,#content-inner, #footer
+#web_bg {
+    -webkit-animation: imgblur 3s 1 ease-in-out;
+    animation: imgblur 3s 1 ease-in-out;
+}
+@keyframes imgblur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+} */
+
+/*适配使用-webkit内核的浏览器 */
+/* @-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+} */
+
+
+/* Font */
+@font-face{
+  font-family:'青春梦想'; 
+  src: url('/font/青春梦想.ttf');
+  font-display : block;
+}
+
+@font-face{
+  font-family:'宋徽宗瘦金体'; 
+  src: url('/font/宋徽宗瘦金体.ttf');
+  font-display : block;
+}
+
+@font-face{
+  font-family:'瘦金体繁体字'; 
+  src: url('/font/瘦金体繁体字.ttf'); 
+  font-display : block;
+}
+
+@font-face{
+  font-family:'English-Ink'; 
+  src: url('/font/English-Ink.ttf'); 
+  font-display : block;
+}
+
+@font-face{
+  font-family:'New Roman'; 
+  src: url('/font/New Roman.ttf');
+  font-display : block;
+}
+
+h1#site-title {
+  color: rgba(255, 255, 255, 0.85)!important;
+  font-family: '青春梦想'!important;
+}
+
+#page-header.full_page {
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+a#site-name {
+  font-size: 14px!important 
+}  
+
+div#site-subtitle {
+  font-family: '青春梦想'!important;
+}
+
+#article-container {
+  font-family: 'New Roman'!important;
+}
+
+#post-meta, h1.post-title {
+  font-family: 'New Roman'!important;
+  text-align: center!important;
+}
+
+h1.page-title {
+  font-family: 'New Roman'!important;
+  color: #151515e8!important;
+  font-size: 2.5em!important;
+}
+
+div.gallery-group-name{
+  font-size: 1em!important 
+}
+
+#article-container figure.gallery-group p{
+  font-size: 0.7em!important 
+}
+
+/* 导航栏居中 */
+#nav .menus_items {
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 子菜单横向居中 */
+/* #nav .menus_items .menus_item:hover .menus_item_child{
+  display: flex;
+} */
+
+/* 子菜单居中 */
+/* .menus_items .menus_item:nth-child(2) .menus_item_child {
+  left: -200px;
+}
+
+.menus_items .menus_item:nth-child(3) .menus_item_child {
+  left: -175px;
+} */
+
+/* 标签魔改 */
+#aside-content .card-tag-cloud a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 0 5px;
+}
+
+.tag-cloud-list a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  margin: 5px;  
+}
+
+
+/* 代码语言字体 */
+div.code-lang{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important;
+}
+
+/* 当aside=hide, 增宽 */
+.layout.hide-aside {
+  max-width: 1200px!important;
+}
+
+/* 图库字体 */
+.category-lists ul li {
+  font-size: 1.2rem!important;
+}
+
+/* 导航顶部 */
+#page-header.not-top-img nav#nav.show   {
+  background-color: rgba(255, 255, 255, 0)!important;
+  color: #fff;
+  box-shadow: 0 5px 6px -5px rgb(133 133 133 / 0%)!important;
+}
+
+#page-header.not-top-img nav#nav.show  span#blog_name a {
+  color: #fff;
+}
+
+#page-header.not-top-img nav#nav.show  div#menus a {
+  color: #fff;
+}
+
+#page-header.not-top-img.nav-fixed.nav-visible #nav.show {
+  background-color: rgba(255, 255, 255, 0.8)!important;
+  box-shadow: 0 5px 6px -5px rgb(133 133 133 / 60%)!important;
+}
+
+#page-header.not-top-img.nav-fixed.nav-visible nav#nav.show  span#blog_name a {
+  color: #4c4948;
+}
+
+#page-header.not-top-img.nav-fixed.nav-visible nav#nav.show  div#menus a {
+  color: #4c4948;
+}
+
+[data-theme="dark"]
+#page-header.not-top-img.nav-fixed.nav-visible #nav.show {
+  background-color: rgba(0, 0, 0, 0.8)!important;
+  --font-color: #fff!important;
+  box-shadow: 0 5px 6px -5px rgb(133 133 133 / 60%)!important;
+}
+
+h1, h2 {
+  text-align: center!important;
+}
+
+span.toc-percentage::after {
+  content: "%"!important;
+}
+/* Or equivalently */
+/* span.toc-percentage::after {
+  font-family: "Font Awesome 5 Free";
+  font: var(--fa-font-light);
+  content: "\25";
+} */
+
+/* 滚动条 */ 
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  width: 10px;
+  /* background-color: #2f3f57; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* div.article-meta-separator{
+  class:"fa-fw fas fa-layer-group";
+} */
