@@ -1,0 +1,28 @@
+extends includes/layout.pug
+
+block content
+  #page
+    if top_img === false
+      h1.page-title= page.title
+
+    case page.type
+      when 'tags'
+        include includes/page/tags.pug
+      when 'link'
+        include includes/page/flink.pug
+      when 'categories'
+        include includes/page/categories.pug
+      default
+        include includes/page/default-page.pug
+
+    if page.comments !== false && theme.comments && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})
+
+    if is_current("/tags/")
+      script(src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js")
+      <div id="tags-chart" data-length="10" style="border-radius: 8px;height: 300px; padding: 10px; margin: 25px;"></div>
+
+    if is_current("/categories/")
+      script(src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js")
+      <div id="categories-chart" data-parent="true" style="border-radius: 8px; height: 300px; padding: 10px; margin: 25px;"></div>
